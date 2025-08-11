@@ -1,0 +1,54 @@
+# --- System Configuration ---
+system:
+  loop_interval_seconds: 60  # Time between main loop cycles
+  log_level: "INFO"
+
+# --- Data & Universe ---
+universe:
+  symbols: ["BTC/USDT", "ETH/USDT", "SOL/USDT", "ADA/USDT", "DOGE/USDT", "LINK/USDT", "AVAX/USDT"]
+  timeframe: "15m"
+  fetch_limit: 1000 # Number of candles to fetch for backtesting
+
+# --- Phase 0: Incubation / Discovery ---
+discovery:
+  population_size: 100
+  generations: 5
+  mutation_rate: 0.1
+  crossover_rate: 0.7
+  promotion_criteria:
+    min_trades: 50
+    min_sortino: 1.0
+    max_mdd: 0.25
+    min_ci_lower_bound: 0.0
+
+# --- Phase 1: Live Probing ---
+live_probing:
+  trade_size_usd: 5.0
+  promotion_criteria:
+    min_live_trades: 25
+    min_net_pnl_usd: 0.5
+    max_slippage_bps: 50
+
+# --- Phase 2: Growth ---
+growth:
+  allocator:
+    exploration: 0.25
+    theme_caps:
+      momentum: 0.5
+      mean_reversion: 0.5
+      other: 0.3
+  kelly:
+    fraction: 0.25
+
+# --- Risk Management (Global Policy) ---
+risk:
+  portfolio_dd_limit: 0.20
+  daily_dd_limit: 0.10
+  reserve_fraction: 0.1
+
+# --- Execution Settings ---
+execution:
+  paper_fees_bps: 8
+  paper_slippage_bps: 10
+  max_allowed_slippage_bps: 75
+  min_fill_rate_pct: 40

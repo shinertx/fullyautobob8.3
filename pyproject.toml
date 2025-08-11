@@ -1,0 +1,21 @@
+[project]
+name = "v26meme"
+version = "2.0.0"
+description = "Autonomous, self-improving crypto trading intelligence."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pydantic>=2.7",
+    "scipy>=1.11",
+    "ccxt>=4.3.69",
+    "plotly>=5.20",
+    "streamlit>=1.35",
+    "pyyaml>=6.0.1",
+    "click>=8.1.7",
+    "loguru>=0.7.2"
+]
+
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
