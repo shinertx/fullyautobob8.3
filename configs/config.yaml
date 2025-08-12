@@ -1,54 +1,52 @@
-# --- System Configuration ---
 system:
-  loop_interval_seconds: 60  # Time between main loop cycles
+  loop_interval_seconds: 90
   log_level: "INFO"
+  redis_host: "localhost"
+  redis_port: 6379
 
-# --- Data & Universe ---
-universe:
-  symbols: ["BTC/USDT", "ETH/USDT", "SOL/USDT", "ADA/USDT", "DOGE/USDT", "LINK/USDT", "AVAX/USDT"]
-  timeframe: "15m"
-  fetch_limit: 1000 # Number of candles to fetch for backtesting
+data_source:
+  exchanges: ["coinbase", "kraken"]
 
-# --- Phase 0: Incubation / Discovery ---
+harvester_universe:
+  symbols: ["BTC_USD_SPOT","ETH_USD_SPOT","SOL_USD_SPOT","AVAX_USD_SPOT","LINK_USD_SPOT","ADA_USD_SPOT","XRP_USD_SPOT","DOGE_USD_SPOT","MATIC_USD_SPOT","DOT_USD_SPOT"]
+  timeframe: "1h"
+  initial_harvest_days: 1095  # 3 years
+
+screener:
+  min_24h_volume_usd: 10000000
+  min_price: 0.20
+  max_symbols: 15
+  snapshot_dir: "data/screener_snapshots"
+
+feeds:
+  cryptopanic:
+    enabled: false      # flip to true after you add CRYPTO_PANIC_TOKEN in .env
+    window_hours: 6
+    min_score: -1.0
+
 discovery:
   population_size: 100
-  generations: 5
-  mutation_rate: 0.1
-  crossover_rate: 0.7
+  generations_per_cycle: 2
   promotion_criteria:
-    min_trades: 50
-    min_sortino: 1.0
-    max_mdd: 0.25
-    min_ci_lower_bound: 0.0
+    min_trades: 75
+    min_sortino: 1.25
+    max_mdd: 0.20
+    min_sharpe: 1.10
+    min_win_rate: 0.52
 
-# --- Phase 1: Live Probing ---
-live_probing:
-  trade_size_usd: 5.0
-  promotion_criteria:
-    min_live_trades: 25
-    min_net_pnl_usd: 0.5
-    max_slippage_bps: 50
+portfolio:
+  max_alpha_concentration: 0.50
+  kelly_fraction: 0.5
+  min_allocation_weight: 0.05
 
-# --- Phase 2: Growth ---
-growth:
-  allocator:
-    exploration: 0.25
-    theme_caps:
-      momentum: 0.5
-      mean_reversion: 0.5
-      other: 0.3
-  kelly:
-    fraction: 0.25
-
-# --- Risk Management (Global Policy) ---
 risk:
-  portfolio_dd_limit: 0.20
-  daily_dd_limit: 0.10
-  reserve_fraction: 0.1
+  daily_stop_pct: 0.10
+  equity_floor_pct: 0.50
+  max_symbol_weight: 0.35
+  max_gross_weight: 1.00
 
-# --- Execution Settings ---
 execution:
-  paper_fees_bps: 8
-  paper_slippage_bps: 10
-  max_allowed_slippage_bps: 75
-  min_fill_rate_pct: 40
+  primary_exchange: "coinbase"
+  mode: "paper"   # paper by default; set "live" later if you choose
+  paper_fees_bps: 18
+  paper_slippage_bps: 5

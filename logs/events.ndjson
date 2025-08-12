@@ -1,0 +1,59 @@
+{"ts": 1754951786.6688612, "type": "system.start", "payload": {"config": {"system": {"loop_interval_seconds": 60, "log_level": "INFO"}, "universe": {"symbols": ["BTC/USDT", "ETH/USDT", "SOL/USDT", "ADA/USDT", "DOGE/USDT", "LINK/USDT", "AVAX/USDT"], "timeframe": "15m", "fetch_limit": 1000}, "discovery": {"population_size": 100, "generations": 5, "mutation_rate": 0.1, "crossover_rate": 0.7, "promotion_criteria": {"min_trades": 50, "min_sortino": 1.0, "max_mdd": 0.25, "min_ci_lower_bound": 0.0}}, "live_probing": {"trade_size_usd": 5.0, "promotion_criteria": {"min_live_trades": 25, "min_net_pnl_usd": 0.5, "max_slippage_bps": 50}}, "growth": {"allocator": {"exploration": 0.25, "theme_caps": {"momentum": 0.5, "mean_reversion": 0.5, "other": 0.3}}, "kelly": {"fraction": 0.25}}, "risk": {"portfolio_dd_limit": 0.2, "daily_dd_limit": 0.1, "reserve_fraction": 0.1}, "execution": {"paper_fees_bps": 8, "paper_slippage_bps": 10, "max_allowed_slippage_bps": 75, "min_fill_rate_pct": 40}}, "initial_state": {"equity": 200.0, "cash": 200.0}}}
+{"ts": 1754951788.911908, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754951909.2390504, "type": "system.error", "payload": {"error": "name 'p' is not defined"}}
+{"ts": 1754952085.0485215, "type": "system.start", "payload": {"config": {"system": {"loop_interval_seconds": 60, "log_level": "INFO"}, "universe": {"symbols": ["BTC/USDT", "ETH/USDT", "SOL/USDT", "ADA/USDT", "DOGE/USDT", "LINK/USDT", "AVAX/USDT"], "timeframe": "15m", "fetch_limit": 1000}, "discovery": {"population_size": 100, "generations": 5, "mutation_rate": 0.1, "crossover_rate": 0.7, "promotion_criteria": {"min_trades": 50, "min_sortino": 1.0, "max_mdd": 0.25, "min_ci_lower_bound": 0.0}}, "live_probing": {"trade_size_usd": 5.0, "promotion_criteria": {"min_live_trades": 25, "min_net_pnl_usd": 0.5, "max_slippage_bps": 50}}, "growth": {"allocator": {"exploration": 0.25, "theme_caps": {"momentum": 0.5, "mean_reversion": 0.5, "other": 0.3}}, "kelly": {"fraction": 0.25}}, "risk": {"portfolio_dd_limit": 0.2, "daily_dd_limit": 0.1, "reserve_fraction": 0.1}, "execution": {"paper_fees_bps": 8, "paper_slippage_bps": 10, "max_allowed_slippage_bps": 75, "min_fill_rate_pct": 40}}, "initial_state": {"equity": 200.0, "cash": 200.0}}}
+{"ts": 1754952087.5788784, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754952207.8203728, "type": "system.error", "payload": {"error": "name 'p' is not defined"}}
+{"ts": 1754952328.2060955, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754952451.1239035, "type": "system.error", "payload": {"error": "name 'p' is not defined"}}
+{"ts": 1754952484.5586855, "type": "system.start", "payload": {"config": {"system": {"loop_interval_seconds": 60, "log_level": "INFO"}, "universe": {"symbols": ["BTC/USDT", "ETH/USDT", "SOL/USDT", "ADA/USDT", "DOGE/USDT", "LINK/USDT", "AVAX/USDT"], "timeframe": "15m", "fetch_limit": 1000}, "discovery": {"population_size": 100, "generations": 5, "mutation_rate": 0.1, "crossover_rate": 0.7, "promotion_criteria": {"min_trades": 50, "min_sortino": 1.0, "max_mdd": 0.25, "min_ci_lower_bound": 0.0}}, "live_probing": {"trade_size_usd": 5.0, "promotion_criteria": {"min_live_trades": 25, "min_net_pnl_usd": 0.5, "max_slippage_bps": 50}}, "growth": {"allocator": {"exploration": 0.25, "theme_caps": {"momentum": 0.5, "mean_reversion": 0.5, "other": 0.3}}, "kelly": {"fraction": 0.25}}, "risk": {"portfolio_dd_limit": 0.2, "daily_dd_limit": 0.1, "reserve_fraction": 0.1}, "execution": {"paper_fees_bps": 8, "paper_slippage_bps": 10, "max_allowed_slippage_bps": 75, "min_fill_rate_pct": 40}}, "initial_state": {"equity": 200.0, "cash": 200.0}}}
+{"ts": 1754952486.8152711, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754952571.3699112, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754952607.2279518, "type": "system.error", "payload": {"error": "name 'p' is not defined"}}
+{"ts": 1754952691.649993, "type": "system.error", "payload": {"error": "name 'p' is not defined"}}
+{"ts": 1754952727.4446158, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754952811.7991378, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754952847.7424686, "type": "system.error", "payload": {"error": "name 'p' is not defined"}}
+{"ts": 1754952932.0530713, "type": "system.error", "payload": {"error": "name 'p' is not defined"}}
+{"ts": 1754952968.0387478, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754953052.3455439, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754953088.1923223, "type": "system.error", "payload": {"error": "name 'p' is not defined"}}
+{"ts": 1754953172.6567, "type": "system.error", "payload": {"error": "name 'p' is not defined"}}
+{"ts": 1754953208.3916793, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754953317.987837, "type": "system.start", "payload": {"config": {"system": {"loop_interval_seconds": 60, "log_level": "INFO"}, "universe": {"symbols": ["BTC/USDT", "ETH/USDT", "SOL/USDT", "ADA/USDT", "DOGE/USDT", "LINK/USDT", "AVAX/USDT"], "timeframe": "15m", "fetch_limit": 1000}, "discovery": {"population_size": 100, "generations": 5, "mutation_rate": 0.1, "crossover_rate": 0.7, "promotion_criteria": {"min_trades": 50, "min_sortino": 1.0, "max_mdd": 0.25, "min_ci_lower_bound": 0.0}}, "live_probing": {"trade_size_usd": 5.0, "promotion_criteria": {"min_live_trades": 25, "min_net_pnl_usd": 0.5, "max_slippage_bps": 50}}, "growth": {"allocator": {"exploration": 0.25, "theme_caps": {"momentum": 0.5, "mean_reversion": 0.5, "other": 0.3}}, "kelly": {"fraction": 0.25}}, "risk": {"portfolio_dd_limit": 0.2, "daily_dd_limit": 0.1, "reserve_fraction": 0.1}, "execution": {"paper_fees_bps": 8, "paper_slippage_bps": 10, "max_allowed_slippage_bps": 75, "min_fill_rate_pct": 40}}, "initial_state": {"equity": 200.0, "cash": 200.0}}}
+{"ts": 1754953320.482854, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754953501.07865, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754953681.23941, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754953861.8559816, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754954042.398778, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754954222.9261467, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754954403.2666073, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754954583.5283215, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754954764.1951714, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754954944.7092624, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754955125.1216052, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754955312.145556, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754955492.5491683, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754955672.9316428, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754955853.270469, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754956033.944147, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754956357.1272151, "type": "system.start", "payload": {"config": {"system": {"loop_interval_seconds": 60, "log_level": "INFO"}, "universe": {"symbols": ["BTC/USDT", "ETH/USDT", "SOL/USDT", "ADA/USDT", "DOGE/USDT", "LINK/USDT", "AVAX/USDT"], "timeframe": "15m", "fetch_limit": 1000}, "discovery": {"population_size": 100, "generations": 5, "mutation_rate": 0.1, "crossover_rate": 0.7, "promotion_criteria": {"min_trades": 50, "min_sortino": 1.0, "max_mdd": 0.25, "min_ci_lower_bound": 0.0}}, "live_probing": {"trade_size_usd": 5.0, "promotion_criteria": {"min_live_trades": 25, "min_net_pnl_usd": 0.5, "max_slippage_bps": 50}}, "growth": {"allocator": {"exploration": 0.25, "theme_caps": {"momentum": 0.5, "mean_reversion": 0.5, "other": 0.3}}, "kelly": {"fraction": 0.25}}, "risk": {"portfolio_dd_limit": 0.2, "daily_dd_limit": 0.1, "reserve_fraction": 0.1}, "execution": {"paper_fees_bps": 8, "paper_slippage_bps": 10, "max_allowed_slippage_bps": 75, "min_fill_rate_pct": 40}}, "initial_state": {"equity": 200.0, "cash": 200.0}}}
+{"ts": 1754956359.4832823, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754956540.8876796, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754956721.0507486, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1754956901.6399655, "type": "sense.regime", "payload": {"regime": "chop"}}
+{"ts": 1754957082.9034464, "type": "sense.regime", "payload": {"regime": "chop"}}
+{"ts": 1754957263.095393, "type": "sense.regime", "payload": {"regime": "chop"}}
+{"ts": 1754957443.6459486, "type": "sense.regime", "payload": {"regime": "chop"}}
+{"ts": 1754957624.3046525, "type": "sense.regime", "payload": {"regime": "chop"}}
+{"ts": 1754957805.2445307, "type": "sense.regime", "payload": {"regime": "chop"}}
+{"ts": 1754957985.7840896, "type": "sense.regime", "payload": {"regime": "chop"}}
+{"ts": 1754958166.7053537, "type": "sense.regime", "payload": {"regime": "chop"}}
+{"ts": 1754958845.2353904, "type": "sense.regime", "payload": {"regime": "chop"}}
+{"ts": 1754959025.677901, "type": "sense.regime", "payload": {"regime": "chop"}}
+{"ts": 1754959757.116322, "type": "sense.regime", "payload": {"regime": "chop"}}
+{"ts": 1754959937.732096, "type": "sense.regime", "payload": {"regime": "chop"}}
+{"ts": 1754960118.2892852, "type": "sense.regime", "payload": {"regime": "chop"}}
+{"ts": 1755009505.0566666, "type": "system.start", "payload": {"config": {"system": {"loop_interval_seconds": 60, "log_level": "INFO"}, "universe": {"symbols": ["BTC/USDT", "ETH/USDT", "SOL/USDT", "ADA/USDT", "DOGE/USDT", "LINK/USDT", "AVAX/USDT"], "timeframe": "15m", "fetch_limit": 1000}, "discovery": {"population_size": 100, "generations": 5, "mutation_rate": 0.1, "crossover_rate": 0.7, "promotion_criteria": {"min_trades": 50, "min_sortino": 1.0, "max_mdd": 0.25, "min_ci_lower_bound": 0.0}}, "live_probing": {"trade_size_usd": 5.0, "promotion_criteria": {"min_live_trades": 25, "min_net_pnl_usd": 0.5, "max_slippage_bps": 50}}, "growth": {"allocator": {"exploration": 0.25, "theme_caps": {"momentum": 0.5, "mean_reversion": 0.5, "other": 0.3}}, "kelly": {"fraction": 0.25}}, "risk": {"portfolio_dd_limit": 0.2, "daily_dd_limit": 0.1, "reserve_fraction": 0.1}, "execution": {"paper_fees_bps": 8, "paper_slippage_bps": 10, "max_allowed_slippage_bps": 75, "min_fill_rate_pct": 40}}, "initial_state": {"equity": 200.0, "cash": 200.0}}}
+{"ts": 1755009507.4986296, "type": "sense.regime", "payload": {"regime": "high_vol"}}
+{"ts": 1755009687.9465537, "type": "sense.regime", "payload": {"regime": "high_vol"}}
